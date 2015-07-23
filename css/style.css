@@ -1,0 +1,169 @@
+/*
+Theme Name: Jorge Mizrain Aguilar
+Description: #shamelessSelfPromotion Theme
+Author: @Mizrradev
+Author URI: http://www.twitter.com/mizrradev
+Version: 0.1
+*/
+
+/*-----------------------------------------------------------------------------------*
+/* = Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+/*-----------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+/*-----------------------------------------------------------------------------------*
+/* = Selection :)
+/*-----------------------------------------------------------------------------------*/
+
+::selection { background: rgba(17, 37, 0,.4); color: white; }
+
+::-moz-selection { background: rgba(17, 37, 0,.4); color: #2C3322; }
+
+/*-----------------------------------------------------------------------------------*
+/* = Utils
+/*-----------------------------------------------------------------------------------*/
+
+.container:after { content: " "; display: block; clear: both; }
+
+.no-border { border: none !important; }
+
+.container { max-width: 800px; margin: 0 auto; }
+
+/*-----------------------------------------------------------------------------------*
+/* = General
+/*-----------------------------------------------------------------------------------*/
+
+body { font-family: "Lato", "Roboto" ,sans-serif; border-top: 10px solid #97C941; color: #333333; }
+
+a { color: #97C941; text-decoration: none; -webkit-transition: color 0.3s; -moz-transition: color 0.3s; -o-transition: color 0.3s; transition: color 0.3s; }
+a:hover { color: #81D7D9; }
+
+strong { font-weight: 700; color: black; }
+
+/*-----------------------------------------------------------------------------------*
+/* = Header
+/*-----------------------------------------------------------------------------------*/
+
+
+/* 5to Commit - Poner imagen de fondo - ../img/bg2.jpg   */
+header { background: url() no-repeat 10% 75% rgb(151, 201, 65);background-size: 100%; text-align: center; }
+header > div { padding: 60px 0; }
+header .avatar { width: 40%; border-radius: 50em; border:solid 10px #97C941 }
+header h1 { font-size: 55px; text-transform: uppercase; color: white; margin: 20px 0 10px 0; font-weight: 700; }
+header h2 { font-size: 16px; text-transform: uppercase; color: #c2f0e5; }
+header:after { width: 0; height: 0; border-left: 16px solid transparent; border-right: 16px solid transparent; border-top: 16px solid #3A3A38; margin: 0 auto; display: block; content: " "; position: relative; top: 16px; }
+header .social { text-align: center; }
+header .social li { display: inline-block; }
+header .social li a { display: block; color: white; width: 30px; line-height: 30px; margin: 20px 3px 0 3px; }
+header .social li a.tw { background: #4d9de2; position: relative; color: white; text-transform: uppercase; text-decoration: none; border-radius: 4px; background: #4d9de2; -webkit-box-shadow: 0px 5px 0px #2385d9; -moz-box-shadow: 0px 5px 0px #2385d9; box-shadow: 0px 5px 0px #2385d9; -webkit-transition: all 0.1s; -moz-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; text-shadow: none; top: 0px; }
+header .social li a.tw:hover { -webkit-box-shadow: 0px 2px 0px #2385d9; -moz-box-shadow: 0px 2px 0px #2385d9; box-shadow: 0px 2px 0px #2385d9; top: 3px; }
+header .social li a.fb { background: #3b5998; position: relative; color: white; text-transform: uppercase; text-decoration: none; border-radius: 4px; background: #3b5998; -webkit-box-shadow: 0px 5px 0px #2d4373; -moz-box-shadow: 0px 5px 0px #2d4373; box-shadow: 0px 5px 0px #2d4373; -webkit-transition: all 0.1s; -moz-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; text-shadow: none; top: 0px; }
+header .social li a.fb:hover { -webkit-box-shadow: 0px 2px 0px #2d4373; -moz-box-shadow: 0px 2px 0px #2d4373; box-shadow: 0px 2px 0px #2d4373; top: 3px; }
+header .social li a.ig { background: #486f9f; position: relative; color: white; text-transform: uppercase; text-decoration: none; border-radius: 4px; background: #486f9f; -webkit-box-shadow: 0px 5px 0px #38567c; -moz-box-shadow: 0px 5px 0px #38567c; box-shadow: 0px 5px 0px #38567c; -webkit-transition: all 0.1s; -moz-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; text-shadow: none; top: 0px; }
+header .social li a.ig:hover { -webkit-box-shadow: 0px 2px 0px #38567c; -moz-box-shadow: 0px 2px 0px #38567c; box-shadow: 0px 2px 0px #38567c; top: 3px; }
+header .social li a.gh { background: #333333; position: relative; color: white; text-transform: uppercase; text-decoration: none; border-radius: 4px; background: black; -webkit-box-shadow: 0px 5px 0px black; -moz-box-shadow: 0px 5px 0px black; box-shadow: 0px 5px 0px black; -webkit-transition: all 0.1s; -moz-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; text-shadow: none; top: 0px; }
+header .social li a.gh:hover { -webkit-box-shadow: 0px 2px 0px black; -moz-box-shadow: 0px 2px 0px black; box-shadow: 0px 2px 0px black; top: 3px; }
+header .social li a.gp { background: #cf3925; position: relative; color: white; text-transform: uppercase; text-decoration: none; border-radius: 4px; background: #cf3925; -webkit-box-shadow: 0px 5px 0px #a42d1d; -moz-box-shadow: 0px 5px 0px #a42d1d; box-shadow: 0px 5px 0px #a42d1d; -webkit-transition: all 0.1s; -moz-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; text-shadow: none; top: 0px; }
+header .social li a.gp:hover { -webkit-box-shadow: 0px 2px 0px #a42d1d; -moz-box-shadow: 0px 2px 0px #a42d1d; box-shadow: 0px 2px 0px #a42d1d; top: 3px; }
+
+/*-----------------------------------------------------------------------------------*
+/* = Home articles
+/*-----------------------------------------------------------------------------------*/
+
+section article p { line-height: 1.4em; margin-bottom: 10px; }
+section article > div { padding: 60px 0; }
+.title__portafolio{text-align: center;font-size: 3.5em;margin-bottom: -1em}
+section article .title { width: 220px; padding-right: 40px; float: left; }
+section article .title h2 { color: rgb(44, 51, 34); text-transform: uppercase; font-size: 50px; font-weight: 700; text-align: right; word-wrap: break-word; }
+section article .title .meta { text-align: right; margin-top: 6px; }
+section article .title .meta i { color: #33cca7; padding-left: 5px; font-size: 1.2em; }
+section article .title .meta li { padding: 10px 0; }
+section article .content { width: 495px; padding-left: 40px; float: right; border-left: 5px solid rgb(44, 51, 34); min-height: 220px; }
+section article .button { position: relative; color: white; text-transform: uppercase; text-decoration: none; border-radius: 4px; background: rgb(0, 177, 242); -webkit-box-shadow: 0px 5px 0px rgb(0, 153, 221); -moz-box-shadow: 0px 5px 0px rgb(0, 153, 221); box-shadow: 0px 5px 0px rgb(0, 153, 221); -webkit-transition: all 0.1s; -moz-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; text-shadow: none; top: 0px; padding: 10px 15px; display: inline-block; }
+section article .button:hover { -webkit-box-shadow: 0px 2px 0px rgb(0, 153, 221); -moz-box-shadow: 0px 2px 0px rgb(0, 153, 221); box-shadow: 0px 2px 0px rgb(0, 153, 221); top: 3px; }
+section article .button-contact { position: relative; color: white; text-transform: uppercase; text-decoration: none; border-radius: 4px; background: rgb(255, 72, 66); -webkit-box-shadow: 0px 5px 0px rgb(208, 39, 42); -moz-box-shadow: 0px 5px 0px rgb(208, 39, 42); box-shadow: 0px 5px 0px rgb(208, 39, 42); -webkit-transition: all 0.1s; -moz-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; text-shadow: none; top: 0px; padding: 10px 15px; display: inline-block; }
+section article .button-contact:hover { -webkit-box-shadow: 0px 2px 0px rgb(208, 39, 42); -moz-box-shadow: 0px 2px 0px rgb(208, 39, 42); box-shadow: 0px 2px 0px rgb(208, 39, 42); top: 3px; }
+section article:nth-of-type(odd):after { width: 0; height: 0; border-left: 16px solid transparent; border-right: 16px solid transparent; border-top: 16px solid white; margin: 0 auto; display: block; content: " "; position: relative; top: 16px; }
+section article:nth-of-type(even) { background: rgba(210, 210, 210,.7) ; }
+section article:nth-of-type(even):after { width: 0; height: 0; border-left: 16px solid transparent; border-right: 16px solid transparent; border-top: 16px solid #d6f5ed; margin: 0 auto; display: block; content: " "; position: relative; top: 16px; }
+section article:last-of-type:after { display: none; }
+
+section article .share >div { float: right; }
+
+/*-----------------------------------------------------------------------------------*
+/* = Single page
+/*-----------------------------------------------------------------------------------*/
+
+.single header > div { padding: 10px 0; }
+.single header h1 { text-align: left; float: left; font-size: 35px; }
+.single header h1 a { color: white; }
+.single header .social { float: right; }
+.single section article h1 { color: #6f3d8e; text-transform: uppercase; font-size: 50px; font-weight: 700; text-align: right; word-wrap: break-word; }
+.single section article h2 { color: #33cca7; text-transform: uppercase; font-size: 30px; font-weight: 700; margin: 20px 0; }
+.single section article h3 { color: #33cca7; text-transform: uppercase; font-size: 25px; font-weight: 400; margin: 20px 0; }
+.single section article .comments { margin-top: 60px; }
+.single section article .comments .comment { border-bottom: 3px solid #33cca7; padding-bottom: 20px; margin-bottom: 20px; }
+.single section article .comments .comment:last-of-type { border-bottom: none; padding-bottom: 20px; margin-bottom: 20px; }
+.single section article .comments .comment .name { font-size: 20px; }
+.single section article .comments .comment .date { font-size: 12px; color: #666666; }
+.single section article .comments h3, .single section article .comment-form h3, .single section article .share h3 { color: #6f3d8e; font-size: 30px; font-weight: 700; border-top: 2px solid #eeeeee; border-bottom: 2px solid #eeeeee; margin-top: 20px; padding: 10px 0; }
+
+.single section article .title h3 { font-size: 1.2em; text-align: right; border: none;}
+
+.fb-like { margin-bottom: 20px; float: right; clear: both; }
+.twitter-share-button { float: right; clear: both; width: 76px !important; }
+
+/*-----------------------------------------------------------------------------------*
+/* = Comment form
+/*-----------------------------------------------------------------------------------*/
+
+input, textarea { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 20px; width: 100%; display: block; margin-bottom: 20px; border: 1px solid #cccccc; border-bottom: 2px solid #33cca7; resize: none; font-size: 1em; -webkit-transition: background 0.3s; -moz-transition: background 0.3s; -o-transition: background 0.3s; transition: background 0.3s; }
+input:focus, textarea:focus { outline: none; border-bottom: 2px solid #6f3d8e; background: #f7f7f7; }
+
+textarea { height: 200px !important; }
+
+button { position: relative; color: white; text-transform: uppercase; text-decoration: none; border-radius: 4px; background: #33cca7; -webkit-box-shadow: 0px 5px 0px #29a386; -moz-box-shadow: 0px 5px 0px #29a386; box-shadow: 0px 5px 0px #29a386; -webkit-transition: all 0.1s; -moz-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; text-shadow: none; top: 0px; padding: 10px 15px; display: inline-block; border: none; font-size: 15px; }
+button:hover { -webkit-box-shadow: 0px 2px 0px #29a386; -moz-box-shadow: 0px 2px 0px #29a386; box-shadow: 0px 2px 0px #29a386; top: 3px; }
+
+
+/*-----------------------------------------------------------------------------------*
+/* = Footer
+/*-----------------------------------------------------------------------------------*/
+
+footer { background: #FF4842; color: #f1f1f1 ; text-align: center; padding: 20px 0; font-size: 13px; }
+footer .container .footer__text{font-weight: 700;font-size: 1.2em}
+footer .container .footer__text a{color:#eee; font-weight: 800; text-decoration: underline;}
+/*-----------------------------------------------------------------------------------*
+/* = Responsive
+/*-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 800px){ 
+	header { background: url(../img/bg2.jpg) no-repeat 10% 75% rgb(151, 201, 65); text-align: center;} 
+	header .avatar { width: 50%; }
+	.single header h1 { text-align: center; float: none; font-size: 35px; }
+	.single header .social { float: none; }
+
+	section article .title { width: 100%; padding-right: 0; float: none; }
+	section article .title h2 { text-align: center; }
+	section article .title .meta { text-align: center; margin-top: 6px; }
+	section article .title .meta i { color: #33cca7; padding-left: 5px; font-size: 1.2em; }
+	section article .title .meta li { padding: 10px 0; display: inline; }
+
+	section article .content { width: 100%; padding-left: 0; float: none; border-left: none; min-height: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 24px; }
+
+}
